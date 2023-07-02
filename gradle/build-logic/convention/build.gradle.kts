@@ -19,6 +19,10 @@ gradlePlugin {
             id = "composite.jetbrains.kotlin.android"
             implementationClass = "plugin.AndroidKotlinConventionPlugin"
         }
+        register("androidVariants") {
+            id = "composite.android.variants"
+            implementationClass = "plugin.AndroidVariantsConventionPlugin"
+        }
         register("androidLibrary") {
             id = "composite.android.library"
             implementationClass = "plugin.AndroidLibraryConventionPlugin"
